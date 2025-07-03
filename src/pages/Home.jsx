@@ -53,8 +53,11 @@ const Home = () => {
           <div className="intro-text">
             <p className="greeting">Hello, I'm</p>
             <h1 className="name">Srinidhi Soundarrajan</h1>
-            <p className='para'>Aspiring engineer and developer with a passion for full-stack development, <br /> 
-            and a growing expertise in AI and machine learning.</p>
+            <p className='para'>
+            I am an aspiring engineer and passionate developer with a strong interest in full-stack development.  <br />
+  I'm also actively building my skills in artificial intelligence and machine learning to create smart,  
+  innovative solutions for real-world problems.
+            </p>
             <button className='para-btn' style={{marginTop: '20px'}}> <a href="/Srinidhi_Soundarrajan_Resume.pdf" download style={{ textDecoration: 'none', color: 'inherit' }}>
     Download CV
   </a></button>
