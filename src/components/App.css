@@ -1,0 +1,316 @@
+/* -------------------- Font Imports -------------------- */
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libertinus-math-regular {
+  font-family: "Libertinus Math", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* -------------------- Global Reset -------------------- */
+* {
+  font-family: "Libertinus Math", system-ui;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* -------------------- Light Mode -------------------- */
+body.light-mode {
+  background-color: azure;
+  color: black;
+}
+
+body.light-mode .nav-bar {
+  background-color: azure;
+}
+
+body.light-mode .hero-section {
+  background-color: azure;
+}
+
+body.light-mode .intro-text,
+body.light-mode .greeting,
+body.light-mode .para {
+  color: black;
+}
+
+body.light-mode .nav-link,
+body.light-mode .toggle-btn {
+  color: black;
+}
+
+/* -------------------- Dark Mode -------------------- */
+body.dark-mode {
+  background-color: black;
+  color: azure;
+}
+
+body.dark-mode .nav-bar {
+  background-color: black;
+}
+
+body.dark-mode .hero-section {
+  background-color: #000000;
+}
+
+body.dark-mode .intro-text,
+body.dark-mode .greeting,
+body.dark-mode .para {
+  color: azure;
+}
+
+body.dark-mode .nav-link,
+body.dark-mode .toggle-btn {
+  color: white;
+}
+body.dark-mode .hero-img{
+  border: 4px solid white;
+}
+body.dark-mode .name{
+  color: white;
+}
+/* -------------------- Navbar -------------------- */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+  padding-top: 40px;
+  height: 100px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: -5px;
+  padding: 0;
+}
+
+.nav-link {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.toggle-btn {
+  font-size: 25px;
+  margin-left: 0px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* -------------------- Hero Section -------------------- */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 20px 40px 20px;
+  min-height: 100vh;
+  height: auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* Allow wrap on small screens */
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.hero-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid black;
+}
+
+/* -------------------- Intro Text -------------------- */
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.greeting {
+  font-size: 40px;
+  margin: 0;
+}
+
+.name {
+  font-size: 80px;
+  margin: 5px 0 0 0;
+  font-family: "Lobster Two", sans-serif;
+  color: black;
+  text-decoration: ;
+}
+.para {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+/* -------------------- Glow Animation -------------------- */
+
+/* -------------------- About Section -------------------- */
+#skills,
+#projects,
+#education,
+#certificates {
+  scroll-margin-top: 120px;
+}
+.para-btn{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+  background-color: black;
+  color: azure;
+  font-size: 20px;
+  margin-left: -5px;
+}
+.para-btn:hover{
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+}
+body.dark-mode .para-btn{
+  background-color: azure;
+  color: black;
+}
+body.dark-mode .para-btn:hover{
+  background-color: transparent;
+  color: azure;
+  border: 2px solid azure;
+}
+
+/**********Responsive Section************/
+
+@media (max-width: 900px){
+  .hero-section{
+    margin-top: -50px;
+    overflow-x: hidden !important;
+  }
+  .nav-link{
+    display: none;
+  }
+  .toggle-btn{
+    display: none;
+  }
+  .hero-img{
+    height: 200px;
+    width:200px;
+  }
+  .nav-bar{
+    display: none;
+  }
+  .greeting{
+    font-size: 20px;
+  }
+  .name{
+    font-size: 35px;
+  }
+  .para{
+    font-size: 20px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1299px) {
+  .hero-section {
+    padding: 100px 30px 40px 30px;
+    gap: 40px;
+    min-height: 100vh;
+  }
+
+  .hero-content {
+    gap: 30px;
+    padding: 0 30px;
+  }
+
+  .hero-img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .intro-text {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .greeting {
+    font-size: 32px;
+  }
+
+  .name {
+    font-size: 60px;
+  }
+
+  .para {
+    font-size: 22px;
+  }
+
+  .para-btn {
+    font-size: 18px;
+    padding: 8px 16px;
+    margin-top: 10px;
+  }
+
+  .nav-links ul {
+    gap: 60px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+
+  .toggle-btn {
+    display: none;
+  }
+  .nav-bar{
+    display: none;
+  }
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px palegoldenrod, 0 0 10px palegoldenrod;
+  }
+
+  to {
+    box-shadow: 0 0 20px palegoldenrod, 0 0 40px palegoldenrod;
+  }
+}

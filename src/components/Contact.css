@@ -1,0 +1,288 @@
+.contact-me{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            gap: 80px;
+            transition: background-color 0.2s ease;
+            flex-direction: column;
+            align-items: center;
+            /* Center everything horizontally */
+            justify-content: center;   
+            margin-top: -100px;
+}
+.contact-title{
+    background-color: black;
+        font-size: 50px;
+        color: azure;
+        border-radius: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+        font-family: "Lobster Two", sans-serif;
+        font-weight: bold;
+        margin-bottom: -200px;
+}
+.contact-form {
+    width: 100%;
+    max-width: 1200px;
+    margin: 200px auto;
+    padding: 30px;
+    background-color: azure;
+    border-radius: 12px;
+    box-shadow: 0 0 25px black;
+    font-family: "Libertinus Math", system-ui;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 2px solid black;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px; }
+
+.contact-btn{
+    font-size: 30px;
+    background-color: black;
+    color: azure;
+    width: 200px;
+    align-items: center;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+body.dark-mode .contact-title{
+        background-color: azure;
+        color: black;
+}
+body.dark-mode .contact-form {
+    background-color: black;
+    box-shadow: 0 0 25px azure;
+}
+body.dark-mode .contact-form label{
+    color: azure;
+}
+body.dark-mode .contact-btn{
+    background-color: azure;
+    color: black;
+}
+body.dark-mode .contact-btn:hover{
+    background-color: transparent;
+    color: azure;
+    border: 2px solid azure;
+}
+body.light-mode .contact-btn:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+}
+/********Responsive Section**************/
+@media (max-width: 575px){
+    .contact-title{
+        font-size: 25px;
+        margin-top: 300px;
+    }
+    .contact-form{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 990px) {
+    .contact-me {
+        height: auto;
+        padding: 60px 15px 40px 15px;
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+    .contact-title {
+        font-size: 50px;
+        margin: 0 auto 0 auto;
+        padding: 0px 30px;
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin: 20px auto;
+        padding: 20px;
+        box-shadow: 0 0 15px black;
+    }
+
+    .contact-form label {
+        font-size: 20px;
+    }
+}
+@media (min-width: 991px) and (max-width: 1299px) {
+    .contact-me {
+        height: auto;
+        padding: 60px 30px;
+        gap: 60px;
+        margin-top: 200px;
+    }
+
+    .contact-title {
+        font-size: 42px;
+        padding: 0 25px;
+        text-align: center;
+        margin-bottom: -150px;
+    }
+
+    .contact-form {
+        max-width: 900px;
+        margin: 160px auto;
+        padding: 30px;
+        box-shadow: 0 0 20px black;
+    }
+
+    .contact-form label {
+        font-size: 25px;
+    }
+}
+@media (min-width: 1300px){
+    .contact-me {
+        height: auto;
+        padding: 60px 30px;
+        gap: 60px;
+        margin-top: 200px;
+    }
+
+    .contact-title {
+        font-size: 42px;
+        padding: 0 25px;
+        text-align: center;
+        margin-bottom: -150px;
+    }
+
+    .contact-form {
+        max-width: 900px;
+        margin: 160px auto;
+        padding: 30px;
+        box-shadow: 0 0 20px black;
+    }
+
+    .contact-form label {
+        font-size: 25px;
+    }
+
+}
+.contact-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+.icon {
+    padding: 10px 20px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px palegoldenrod, 0 0 10px palegoldenrod;
+    }
+
+    to {
+        box-shadow: 0 0 20px palegoldenrod, 0 0 40px palegoldenrod;
+    } }
+        .contact-icons {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    
+        /* Base icon style */
+        .icon {
+            padding: 10px;
+            background-color: #111;
+            color: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            animation: glow 1.5s ease-in-out infinite alternate;
+            font-size: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+    
+        /* Hover Effect */
+        .icon:hover {
+            transform: scale(1.15);
+            background-color: #0ff;
+            color: #111;
+        }
+    
+        /* Dark Mode */
+        body.dark-mode .icon {
+            background-color: azure;
+            color: black;
+        }
+    
+        body.dark-mode .icon:hover {
+            background-color: transparent;
+            border: 2px solid azure;
+            color: azure;
+        }
+    
+        /* Light Mode Hover */
+        body.light-mode .icon:hover {
+            background-color: transparent;
+            border: 2px solid black;
+            color: black;
+        }
+@media (max-width: 575px) {
+    .icon {
+        font-size: 1.8rem;
+        padding: 8px;
+    }
+}
+@media (max-width: 990px) {
+    .icon {
+        font-size: 2.2rem;
+        padding: 10px;
+    }
+}
+@media (min-width: 991px) {
+    .icon {
+        font-size: 2.5rem;
+        padding: 12px;
+    }
+}

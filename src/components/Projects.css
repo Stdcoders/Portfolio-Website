@@ -1,0 +1,341 @@
+.project-me{
+    height: 100vh;
+        width: 100%;
+        display: flex;
+        gap: 80px;
+        transition: background-color 0.2s ease;
+        flex-direction: column;
+        align-items: center;
+        /* Center everything horizontally */
+        justify-content: center;
+        margin-top: 400px;
+}
+.project-me h1{
+    background-color: black;
+        font-size: 50px;
+        color: azure;
+        border-radius: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+        font-family: "Lobster Two", sans-serif;
+
+}
+body.dark-mode .project-me h1 {
+    background-color: azure;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 50px;
+    color: black;
+    border-radius: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+body.dark-mode .card{
+    background-color: transparent;
+    border: 4px solid azure;
+}
+body.dark-mode .card:hover{
+    box-shadow: 0 0 25px rgba(255,255,255,1);
+}
+body.dark-mode .car-title{
+    background-color: transparent;
+    color: azure;
+}
+body.dark-mode .car-desc {
+    background-color: transparent;
+    color: azure;
+}
+.project-container{
+    height: 700px;
+    max-width: 100%;
+    background-color: transparent;
+    gap: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: -120px;
+}
+.card-img{
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+}
+.card{
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 500px;
+    margin-top: 50px;
+    border-radius: 20px;
+    border: 4px solid black;
+    transition: transform 0.5s ease;
+}
+.car-title{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+.car-desc{
+    font-size: 25px;
+    padding-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+.car-tech{
+    font-size: 20px;
+        padding-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        text-align: center;
+        font-weight: bold;
+}
+.card:hover{
+    box-shadow: 0 0 25px rgba(0,0,0,1);
+    transform: translateY(-10px);
+}
+.git-btn{
+    align-self: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: -20px auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    background-color: black;
+    color: azure;
+    border-radius: 50px;
+}
+.git-btn:hover{
+   border: 4px solid black; 
+}
+body.dark-mode .git-btn{
+    background-color: azure;
+    color: black;
+}
+body.dark-mode .git-btn a{
+    color: black;
+    text-decoration: none;
+}
+body.light-mode .git-btn a {
+    color: azure;
+    text-decoration: none;
+}
+@media (max-width: 990px) {
+    .project-me {
+        height: auto;
+        padding: 60px 15px 40px 15px;
+        gap: 40px;
+        margin-top: 100px;
+    }
+
+    .project-me h1 {
+        font-size: 50px;
+        padding: 0px 30px;
+        text-align: center;
+    }
+
+    .project-container {
+        flex-direction: column;
+        height: auto;
+        margin-top: 0;
+        gap: 40px;
+        padding: 0 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .card-img {
+        height: 180px;
+    }
+
+    .car-title {
+        font-size: 22px;
+        padding: 15px 10px;
+    }
+
+    .car-desc,
+    .car-tech {
+        font-size: 16px;
+        margin: 0 10px;
+        padding: 10px 0;
+    }
+
+    .git-btn {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .project-me {
+        margin-top: 50px;
+        padding: 60px 30px;
+        gap: 60px;
+        height: auto;
+    }
+
+    .project-me h1 {
+        font-size: 45px;
+        text-align: center;
+        padding: 10px 25px;
+    }
+
+    .project-container {
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 0 20px;
+        justify-content: center;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .card {
+        width: 280px;
+        height: auto;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    .card-img {
+        height: 180px;
+    }
+
+    .car-title {
+        font-size: 24px;
+        padding: 10px 0;
+    }
+
+    .car-desc,
+    .car-tech {
+        font-size: 18px;
+        padding: 20px;
+        margin: 0 5px;
+    }
+
+    .git-btn {
+        font-size: 18px;
+        padding: 0px 30px;
+    } }
+        @media (min-width: 991px) and (max-width: 1299px) {
+            .project-me {
+                margin-top: 100px;
+                padding: 40px 30px;
+                gap: 50px;
+                height: auto;
+            }
+    
+            .project-me h1 {
+                font-size: 40px;
+                padding: 10px 25px;
+                text-align: center;
+            }
+    
+            .project-container {
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 30px;
+                padding: 0 20px;
+                height: auto;
+                margin-top: 0;
+            }
+    
+            .card {
+                width: 300px;
+                height: auto;
+                margin: 0;
+                padding-bottom: 25px;
+            }
+    
+            .card-img {
+                height: 180px;
+                width: 100%;
+            }
+    
+            .car-title {
+                font-size: 24px;
+                padding: 10px 0;
+            }
+    
+            .car-desc,
+            .car-tech {
+                font-size: 18px;
+                margin: 0 10px;
+                padding: 10px 0;
+            }
+    
+            .git-btn {
+                font-size: 18px;
+                padding: 8px 24px;
+                margin-top: 10px;
+            }   }
+                        @media (min-width: 1300px) {
+                            .project-me {
+                                    margin-top: 100px;
+                                    padding: 40px 30px;
+                                    gap: 50px;
+                                    height: auto;
+                                }
+                            
+                                .project-me h1 {
+                                    font-size: 50px;
+                                    padding: 0px 30px;
+                                    text-align: center;
+                                }
+                            
+                                .project-container {
+                                    flex-wrap: wrap;
+                                    flex-direction: row;
+                                    justify-content: center;
+                                    align-items: flex-start;
+                                    gap: 120px;
+                                    padding: 0 20px;
+                                    height: auto;
+                                    margin-top: 0;
+                                }
+                            
+                                .card {
+                                    width: 300px;
+                                    height: auto;
+                                    margin: 0;
+                                    padding-bottom: 25px;
+                                }
+                            
+                                .card-img {
+                                    height: 180px;
+                                    width: 100%;
+                                }
+                            
+                                .car-title {
+                                    font-size: 24px;
+                                    padding-top: 20px;
+                                        padding-bottom: 20px;
+                                }
+                            
+                                .car-desc,
+                                .car-tech {
+                                    font-size: 18px;
+                                    margin: 0 10px;
+                                    padding-top: 20px;
+                                    padding-bottom: 20px;
+                                }
+                            
+                                .git-btn {
+                                    font-size: 18px;
+                                    padding: 8px 24px;
+                                    margin-top: 10px;             }  
+}
