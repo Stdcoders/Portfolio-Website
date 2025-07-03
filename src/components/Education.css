@@ -230,21 +230,36 @@ body.dark-mode .container .circle-logo {
                 width: 48%;
             }
         }
-                @media (min-width: 1300px) and (max-width: 1600px) {
+        @media (min-width: 1300px) {
+            .container {
+                width: 50%;
+                position: relative;
+            }
         
-                    .timeline::after,
-                    .circle-logo {
-                        display: block;
-                    }
+            .left-container {
+                left: 0;
+                margin-left: -25px;
+            }
         
-                    .container {
-                        width: 100%;
-                        margin: 20px auto;
-                        padding: 20px;
-                    }
+            .right-container {
+                left: 50%;
+                margin-left: 25px;
+            }
         
-                    .about-section {
-                        padding: 0 30px;
-                        gap: 50px;
-                        margin-top: -100px;
-                    }         }
+            .timeline::after {
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 100%;
+                background-color: black;
+                top: 0;
+                left: 50%;
+                margin-left: -3px;
+                animation: moveline 3s linear forwards;
+            }
+        
+            .about-section {
+                padding: 0 60px;
+                gap: 60px;
+                margin-top: -100px;
+            }       }
