@@ -234,7 +234,7 @@ body.dark-mode .container .circle-logo {
         
                     .timeline::after,
                     .circle-logo {
-                        display: none;
+                        display: block;
                     }
         
                     .container {
