@@ -9,17 +9,6 @@ import Projects from '../components/Projects'
 import Contact from '../components/Contact.jsx'
 
 const Home = () => {
-  const [darkMode, setDarkMode] = useState(false)
-
-  useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add('dark-mode')
-      document.body.classList.remove('light-mode')
-    } else {
-      document.body.classList.add('light-mode')
-      document.body.classList.remove('dark-mode')
-    }
-  }, [darkMode])
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -37,13 +26,6 @@ const Home = () => {
               <li className='nav-link' style={{cursor: 'pointer'}}  onClick={() => scrollToSection('skills')}>Skills</li>
               <li className='nav-link' style={{cursor: 'pointer'}} onClick={() => scrollToSection('projects')}>Projects</li>
               <li className='nav-link' style={{cursor: 'pointer'}} onClick={() => scrollToSection('contact')}>Contact</li>
-              <li>
-                {
-                  darkMode
-                    ? <FiSun className='toggle-btn' onClick={() => setDarkMode(false)} />
-                    : <FiMoon className='toggle-btn' onClick={() => setDarkMode(true)} />
-                }
-              </li>
             </ul>
           </nav>
         </div>
