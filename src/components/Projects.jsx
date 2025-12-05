@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import sleep from '../assets/sleep.jpeg'
 import dash from '../assets/dash.png'
-import hospital from '../assets/hospital.jpg'
+import hospital from '../assets/hospital.jpeg'
 
 const Projects = () => {
  
